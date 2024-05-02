@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <title>Your Favorite Movies and TV Shows - 123 Movies</title>  
+    
+   <meta name="title" content=" Watch Your Favorite Movies and TV Shows Online - 123 Movies ">
+ 
+<meta name="description" content="123 Movies is your ultimate destination for free online streaming of movies and TV shows. We offer a vast collection of movies and TV shows from all genres, updated daily. Stream your favorite movies and shows in HD quality, without any registration or subscription required. Enjoy endless hours of entertainment, anytime, anywhere.">
+
+<meta name="keywords" content="123 movies, free movies, watch movies online,watch tv shows online,HD streaming,hd movies online for free,high quality free online movies,online movie website,free online movies,english movies online, movies with Subtitles, no registration movies, new movies, popular movies, trending movies, no ads"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="liked_movies.css">
+    
+</head>
+<body>
+    
+  <div  class="sidebar">
+    <div class="logo-details">
+      <i class='bx bxl-c-plus-plus icon'></i>
+        <div class="logo_name">123movies</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+          <i class='bx bx-search' ></i>
+         <input id="searchInput" type="text" placeholder="Search..." onkeydown="if (event.keyCode === 13) searchMovies()">
+         <span class="tooltip">Search</span>
+      </li>
+
+      <li>
+        <a href="../index.html">
+          <i class='bx bx-home'></i>
+          <span class="links_name">Home</span>
+        </a>
+         <span class="tooltip">Home</span>
+      </li>
+
+
+      
+       <li>
+        <a href="../content_explore/content.html?type=movies">
+          <i class='bx bx-movie'></i>
+          <span class="links_name">Movies</span>
+        </a>
+         <span class="tooltip">Movies</span>
+      </li>
+
+  <li>
+        <a href="../content_explore/content.html?type=series">
+          <i class='bx bx-show'></i>
+          <span class="links_name">Shows</span>
+        </a>
+         <span class="tooltip">Shows</span>
+      </li>
+
+
+     <li>
+       <a href="../liked_movies/liked_movies.html">
+         <i class='bx bx-heart' ></i>
+         <span class="links_name">Liked</span>
+       </a>
+       <span class="tooltip">Liked</span>
+     </li>
+
+     
+     <li class="profile">
+         <div class="profile-details">
+           <img src="https://i.ibb.co/DzFV2HX/3249ff1a4835c1910210f2cdb48965ab.jpg" alt="profileImg">
+           <div class="name_job">
+             <div class="name">123movies</div>
+             <div class="job">Movies with Subtitles</div>
+           </div>
+         <!-- </div>
+         <i class='bx bx-log-out' id="log_out" ></i>
+     </li> -->
+    </ul>
+  </div>
+
+    <div id="moviesContainer" class="movies-container"></div>
+    <script src="liked_movies.js"></script>
+
+
+</body>
+</html>
